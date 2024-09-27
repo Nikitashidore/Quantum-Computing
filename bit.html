@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bit.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    /* Navbar Styles */
+    body, ul, li, a {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      box-sizing: border-box;
+      
+    }
+
+    /* Basic styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to right, rgb(255, 0, 0), rgb(210, 31, 255), rgb(48, 57, 222), rgb(255, 0, 149), rgb(196, 248, 7));
+    
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .navbar-menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .navbar-menu li {
+      display: inline;
+      border-radius: 0;
+      background-color: red;
+      color:white;
+      
+    }
+
+    .navbar-menu a {
+      font-size: 1.2rem;
+      color: rgb(150, 44, 208);
+    }
+
+    /* Marquee styling */
+    .navbar-marquee {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    marquee {
+      font-size: 1.5rem;
+      color: blue;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .navbar-menu {
+        display: none;
+      }
+
+      .navbar-toggler {
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .navbar-menu.open {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .navbar-toggler {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-marquee">
+      <marquee behavior="" direction="">
+        <a class="navbar-brand" href="#">Quantum Computing: The Next Revolution In Technology</a>
+      </marquee>
+    </div>
+    <a href="index.html" style="background: linear-gradient(to right, #ff7e5f, #feb47b); color: rgb(0, 0, 0); padding: 10px 20px; text-decoration: none; border-radius: 5px; text-align: right;">Back</a>
+    
+    <!-- <div class="navbar-toggler">☰ Menu</div> -->
+     <!-- <ul class="navbar-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Challenges</a></li> -->
+      <!-- <li><a href="#">Future</a></li> -->
+    </ul> 
+  </nav>
+
+  
+<!-- <div class="home">
+  <img src="Designer (1).jpeg" class="img1" alt="">
+</div> -->
+
+
+
+
+<body>
+  <!-- <a href="index.html" style="background: linear-gradient(to right, #ff7e5f, #feb47b); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Back</a> -->
+ <img src="neural.jpg" alt="" style="height: 600px; width: 100%;">
+
+    <div class="container">
+      <h1 style="
+      background: linear-gradient(to right, rgb(255, 0, 0), rgb(210, 31, 255), rgb(48, 57, 222), rgb(255, 0, 149), rgb(196, 248, 7));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;">Quantum Neural Network</h1>
+    
+        
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-title" >Quantum Neural Network Information</button>
+                <div class="accordion-content">
+                    <h2>Quantum Neural Network Importance For Quatum Computing </h2>
+                    <ul>
+                        <li><strong>Neurals (Nodes)</strong>These are the basic units in a Quantum Neuron Network, just like neurons in a biological brain or nodes in classical neural networks.</li>
+                        <li><strong>Layers</strong>Similar to traditional neural networks, quantum neuron networks consist of multiple layers. Each layer contains several neurons that work together to process information.</li>
+                        <li><strong>Weights and Biases</strong>Weights determine the importance of a specific input to a neuron. For example, if an input is more relevant to solving a problem, it will be assigned a higher weight.Biases are additional constants added to the input, helping the network to make better predictions and adjust its output.</li>
+                        <li><strong>Activation Function</strong>When a neuron is activated, it passes information to the next layer. If not activated, it remains silent.Activation functions add non-linearity, allowing the network to learn and model more complex relationships between inputs.</li>
+                        <li><strong>Forward Propagation</strong>This is the process of moving data through the network, starting from the input layer and passing through all the layers until it reaches the output layer.</li>
+                    </ul>
+                    <h3>Types of Neural Networks in Quantum Computing</h3>
+                    <ul>
+                        <li> <strong> Neural Networks (FNN):</strong> Feedforward Neural Networks (FNN):The simplest type of neural network where the data flows only in one direction: forward, from the input layer to the output layer.No data or information loops back. FNNs are typically used for tasks like classification or regression.Convolutional Neural Networks (CNN):Primarily used for image or video processing tasks, CNNs apply filters to recognize patterns in data (e.g., edges, textures in images).In quantum CNNs, quantum gates can be used to apply these filters, allowing for faster and more efficient pattern recognition.</li>
+                        <!-- <li>Convolutional Neural Networks (CNN)</li> -->
+                        <li> <strong>Neural Networks (RNN): </strong>Recurrent Neural Networks (RNN):Unlike FNNs, RNNs have connections that loop back, allowing the network to "remember" previous inputs. This makes them great for tasks involving sequential data, like time series prediction or natural language processing.Quantum RNNs can leverage quantum memory, potentially allowing for much more efficient learning on sequence data.</li>
+                        <li><strong>Generative Adversarial Networks (GANs): </strong>Generative Adversarial Networks (GANs):A unique type of neural network where two networks (a generator and a discriminator) compete with each other. The generator creates new data, while the discriminator evaluates its quality.Quantum GANs could generate and assess complex data, such as realistic images, faster than classical GANs due to the processing power of qubits</li>
+                    </ul>
+                  
+                </div>
+            </div>
+        </div>
+   
+
+  
+    <div class="container">
+      <!-- <h1>Quantum Neuron Network</h1> -->
+      
+      <div class="accordion">
+          <div class="accordion-item">
+              <button class="accordion-title">Quantum Neural Network Limitation</button>
+              <div class="accordion-content">
+                  <!-- <h2>Key Components of Quantum Neuron Network</h2> -->
+                  <b>
+                  <ul class="Challenges" style="font-size: 20px; font-style: bold;">
+                      <li>Quantum Hardware Limitations</li>
+                      <img src="hardware-removebg-preview.png" alt="">
+                      <li>Implementation of Algorithm</li>
+                      <img src="algo-removebg-preview.png" alt="">
+                      <li>Cost and Infrastructure</li>
+                      <img src="cost-removebg-preview.png" alt="">
+                      <li>Energy Consumption</li>
+                      <img src="energy.jpg" alt="">
+                      <li>Government and National Research Labs</li>
+                      <img src="lab.jpg" alt="">
+                  </ul>
+                  </b>
+                   </div>
+      </div>
+  </div>
+
+
+
+  
+  
+
+  <div class="container">
+    <!-- <h1>Quantum Neuron Network</h1> -->
+    
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-title">Quantum Neural Network Future</button>
+            <div class="accordion-content">
+              
+              <header>
+                <b>                <h1>Future Prospects of Quantum Neural Networks</h1></b>
+              </header>
+            
+              <div class="container">
+                <ul>
+                  <li><strong>Enhanced AI Capabilities:</strong> Faster, more efficient AI models, potentially leading to Artificial General Intelligence (AGI).</li>
+                  <li><strong>Drug Discovery and Healthcare:</strong> Personalized medicine and faster disease diagnostics with molecular simulations.</li>
+                  <li><strong>Quantum Finance:</strong> Optimizing portfolios, market predictions, and fraud detection with QNNs.</li>
+                  <li><strong>Cybersecurity Improvements:</strong> Developing quantum-resistant encryption and real-time threat detection.</li>
+                  <li><strong>Environmental Modeling:</strong> Better climate models for sustainability and improved renewable energy optimization.</li>
+                  <li><strong>Scientific Research:</strong> Discover new materials and simulate complex quantum systems.</li>
+                  <li><strong>Transportation and Logistics:</strong> Traffic optimization, supply chain improvements, and dynamic resource allocation.</li>
+                  <li><strong>Space Exploration:</strong> Enhanced space simulations and autonomous decision-making in space exploration.</li>
+                  <li><strong>Advanced Robotics:</strong> Safer autonomous vehicles and more precise robotics in automation.</li>
+                </ul>
+              </div>
+            
+            
+
+</div>
+<div class="container">
+  <!-- <h1>Quantum Neuron Network</h1> -->
+  
+  <div class="accordion">
+      <div class="accordion-item">
+          <button class="accordion-title">Download Quantum Neural Network Pdf</button>
+          <div class="accordion-content">
+              <!-- <h2>Key Components of Quantum Neuron Network</h2> -->
+              <div class="pdf">
+                <div class="download-btn">
+                    <a href="quantum-pdf.pdf" class="btn btn-primary" download>Download PDF</a>
+                  </div>
+                 
+          </div>
+      </div>
+  </div>
+</div>
+
+</div>
+
+  <!-- Footer -->
+ 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+    
+  </div>
+</body>
+</html>

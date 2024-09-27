@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Navbar Styles */
+    body, ul, li, a {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      box-sizing: border-box;
+      
+    }
+
+    /* Basic styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to right, rgb(255, 0, 0), rgb(210, 31, 255), rgb(48, 57, 222), rgb(255, 0, 149), rgb(196, 248, 7));
+    
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .navbar-menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .navbar-menu li {
+      display: inline;
+      
+    }
+
+    .navbar-menu a {
+      font-size: 1.2rem;
+      color: rgb(150, 44, 208);
+    }
+
+    /* Marquee styling */
+    .navbar-marquee {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    marquee {
+      font-size: 1.5rem;
+      color: blue;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .navbar-menu {
+        display: none;
+      }
+
+      .navbar-toggler {
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .navbar-menu.open {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .navbar-toggler {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-marquee">
+      <marquee behavior="" direction="">
+        <a class="navbar-brand" href="#">Quantum Computing: The Next Revolution In Technology</a>
+      </marquee>
+    </div>
+    
+    <!-- <div class="navbar-toggler">☰ Menu</div> -->
+    
+    <!-- <ul class="navbar-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Challenges</a></li>
+      <li><a href="#">Future</a></li>
+    </ul> -->
+  </nav>
+
+  
+<!-- <div class="home">
+  <img src="Designer (1).jpeg" class="img1" alt="">
+</div> -->
+
+
+
+
+
+<style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .wrapper {
+  padding: 20px;
+  max-width: 1200px; /* Limiting the maximum width for better readability */
+  margin: 0 auto; /* Centers the container */
+}
+    .container {
+      text-align: center;
+      height: 600px;
+      width: 1200px;
+      padding: 10px;
+      /* background-color: #007BFF; */
+      background: linear-gradient(to right, rgb(198, 178, 231),  rgb(239, 235, 244) ,rgb(198, 178, 231));
+    
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .description {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    /* Grid styles */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      background-color: white;
+      padding: 20px;
+      /* width: 1200px; */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      /* background-color: #000000; */
+      /* color: white; */
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #007BFF;
+    }
+
+    h2 span {
+      font-weight: bold;
+      color: #ff6347;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    /* Link style */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Media query for smaller devices */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .box {
+        padding: 5px;
+      }
+    }
+    .img{
+      height: 40px;
+      width: 40%;
+    }
+  </style>
+
+
+
+
+
+  <div class="wrapper">
+    <div class="container">
+      <h1 style="
+      background: linear-gradient(to right, rgb(255, 0, 0), rgb(210, 31, 255), rgb(48, 57, 222), rgb(255, 0, 149), rgb(196, 248, 7));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;">Introduction to Quantum Computing</h1>
+      <p class="description">
+        Quantum computers use qubits, which can exist in a superposition of states, unlike classical bits. This allows them to perform operations on multiple values simultaneously, leading to exponential speedups for certain tasks.
+      </p>
+
+      <div class="grid">
+        <div class="box">
+          <a href="qubit.html">
+          <img src="bit1.jpg" alt="Quantum Bit" style="width: 200px;  border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+<br><br>
+          <h2><span>1</span > Quantum Bit</h2>
+          <p>Quantum bit is the fundamental unit of Quantum Computing. This Qubit can exist in multiple states at a time, like 0 or 1 simultaneously.</p>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="superposition.html" target="" rel="noopener noreferrer">
+          <img src="bit2.jpg" alt="Quantum Bit" style="width: 200px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+          <br><br>
+          <h2><span>2</span> Superposition</h2>
+          <p>A qubit can represent both 0 and 1 at the same time, enabling parallel computation and allowing Quantum computers to perform multiple calculations simultaneously.</p>
+          </a>
+        </div>
+
+        <div class="box">
+          <a href="Entangle.html">
+          <img src="ent.jpg" alt="Quantum Bit" style="width: 200px; height: 140px;  border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+          <br><br>
+          <h2><span>3</span> Quantum Entanglement</h2>
+          <p>A quantum phenomenon where two or more qubits are linked, such that the state of one qubit can depend on the state of another, even when separated by large distances. This allows for faster and more complex problem-solving.</p>
+          </a>
+        </div>
+
+        <a href="bit.html" target="" rel="noopener noreferrer">
+          <div class="box">
+            <img src="neural.jpg" alt="Quantum Bit" style="width: 200px;  height:180; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+            <br><br>
+            <h2><span>4</span> Quantum Neural Network</h2>
+            <p>The poster introduces the concept of the Quantum Neural Network...Click to explore this topic.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+        <!-- I
+    <div class="footer" style="background-color: black; color: aliceblue;">
+          <footer>
+      <p>&copy; 2024 Quantum Computing Co. All rights reserved.</p>
+      <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
